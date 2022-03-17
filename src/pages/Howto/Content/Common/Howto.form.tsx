@@ -178,7 +178,7 @@ export class HowtoForm extends React.PureComponent<IProps, IState> {
                   uploadComplete={this.store.uploadStatus.Complete}
                 />
 
-                <Flex bg="inherit" px={2} sx={{ width: [1, 1, 2 / 3] }} mt={4}>
+                <Flex bg="inherit" px={2} sx={{ width: ['100%', '100%', `${2 / 3 * 100}%`] }} mt={4}>
                   <FormContainer
                     ref={this.formContainerRef as any}
                     id="howtoForm"

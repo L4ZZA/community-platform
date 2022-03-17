@@ -17,7 +17,12 @@ export const BaseHeading = styled(Text)`
 type IHeadingProps = ITextProps & ThemeUiHeadingProps
 
 const Heading = (props: IHeadingProps) => (
-  <BaseHeading {...(props as any)}>{props.children}</BaseHeading>
+  <BaseHeading
+    {...(props as any)}
+    sx={{ ...props?.sx, display: 'block', width: '100%' }}
+  >
+    {props.children}
+  </BaseHeading>
 )
 
 export default Heading

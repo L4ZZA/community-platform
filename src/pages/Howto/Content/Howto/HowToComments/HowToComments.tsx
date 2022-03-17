@@ -116,7 +116,11 @@ export const HowToComments = ({ comments }: IProps) => {
       <Flex
         mb={4}
         sx={{
-          width: [4 / 5, 4 / 5, 2 / 3],
+          width: [
+            `${(4 / 5) * 100}%`,
+            `${(4 / 5) * 100}%`,
+            `${(2 / 3) * 100}%`,
+          ],
           flexDirection: 'column',
           alignItems: 'center',
         }}
@@ -129,7 +133,7 @@ export const HowToComments = ({ comments }: IProps) => {
           handleDelete={handleDelete}
         />
       </Flex>
-      <BoxStyled sx={{ width: 2 / 3 }}>
+      <BoxStyled sx={{ width: `${(2 / 3) * 100}%` }}>
         <CommentTextArea
           data-cy="comment-text-area"
           comment={comment}
@@ -141,6 +145,10 @@ export const HowToComments = ({ comments }: IProps) => {
           disabled={!Boolean(comment.trim()) || loading}
           variant="primary"
           onClick={() => onSubmit(comment)}
+          mt={3}
+          sx={{
+            float: 'right',
+          }}
         >
           Comment
         </Button>

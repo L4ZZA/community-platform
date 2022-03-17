@@ -155,7 +155,7 @@ export class Howto extends React.Component<
           </Box>
           <HowToComments comments={activeHowto.comments} />
           <MoreBox py={20} mt={20}>
-            <Text bold txtcenter sx={{fontSize: [4, 4, 5]}}>
+            <Text bold txtcenter sx={{fontSize: [4, 4, 5], display: 'block'}}>
               You're done.
               <br />
               Nice one!

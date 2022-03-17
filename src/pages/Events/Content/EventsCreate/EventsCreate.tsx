@@ -101,7 +101,7 @@ export class EventsCreate extends React.Component<IProps, IState> {
         render={({ form: { mutators }, submitting, handleSubmit }) => {
           return (
             <Flex mx={-2} bg={'inherit'} sx={{ flexWrap: 'wrap' }}>
-              <Flex bg="inherit" px={2} sx={{ width: [1, 1, 2 / 3] }} mt={4}>
+              <Flex bg="inherit" px={2} sx={{ width: ['100%', '100%', `${2 / 3 * 100}%`] }} mt={4}>
                 <FormContainer onSubmit={e => e.preventDefault()}>
                   {/* How To Info */}
                   <Flex sx={{ flexDirection: 'column' }}>
@@ -136,7 +136,7 @@ export class EventsCreate extends React.Component<IProps, IState> {
                     >
                       <Flex
                         mb={3}
-                        sx={{ width: [1, 1, 2 / 3], flexDirection: 'column' }}
+                        sx={{ width: ['100%', '100%', `${2 / 3 * 100}%`], flexDirection: 'column' }}
                       >
                         <Label htmlFor="title">Title of the event *</Label>
                         <Field

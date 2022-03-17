@@ -158,7 +158,7 @@ export class UserSettings extends React.Component<IProps, IState> {
                   }
                 />
                 <Flex
-                  sx={{width: [1, 1, 2 / 3],
+                  sx={{width: ['100%', '100%', `${2 / 3 * 100}%`],
                     my: 4,
                     bg: 'inherit',
                     px: 2,

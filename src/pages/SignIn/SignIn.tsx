@@ -156,7 +156,11 @@ class SignInPage extends React.Component<IProps, IState> {
                       px={4}
                       pt={0}
                       pb={4}
-                      sx={{ flexWrap: 'wrap', flexDirection: 'column', width: '100%' }}
+                      sx={{
+                        flexWrap: 'wrap',
+                        flexDirection: 'column',
+                        width: '100%',
+                      }}
                     >
                       {/* PauthProvider Provider Select */}
                       {!this.state.authProvider && (
@@ -196,9 +200,7 @@ class SignInPage extends React.Component<IProps, IState> {
                             />
                           </Flex>
                           <Flex sx={{ flexDirection: 'column' }} mb={3}>
-                            <Label htmlFor="title">
-                              Password
-                            </Label>
+                            <Label htmlFor="title">Password</Label>
                             <Field
                               name="password"
                               type="password"

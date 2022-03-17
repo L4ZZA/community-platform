@@ -127,7 +127,7 @@ const UpdateForm = observer((props: IProps) => {
         render={({ submitting, dirty, handleSubmit }) => {
           return (
             <Flex mx={-2} mb={4} bg={'inherit'} sx={{ flexWrap: 'wrap' }}>
-              <Flex bg="inherit" px={2} sx={{ width: [1, 1, 2 / 3] }} mt={4}>
+              <Flex bg="inherit" px={2} sx={{ width: ['100%', '100%', `${2 / 3 * 100}%`] }} mt={4}>
                 <Prompt
                   when={!store.updateUploadStatus.Complete && dirty}
                   message={CONFIRM_DIALOG_MSG}

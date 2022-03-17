@@ -30,12 +30,17 @@ const ResearchListItem: React.FC<IProps> = ({ item }) => (
       sx={{ width: '100%' }}
     >
       <Flex px={3} py={3} sx={{ flexDirection: ['column', 'column', 'row'] }}>
-        <Flex sx={{ alignItems: 'center', width: [1, 1, 1 / 2] }}>
+        <Flex
+          sx={{
+            alignItems: 'center',
+            width: ['100%', '100%', `${(1 / 2) * 100}%`],
+          }}
+        >
           <Heading small color={'black'}>
             {item.title}
           </Heading>
         </Flex>
-        <Flex sx={{ alignItems: 'center', width: [1, 1, 1 / 4] }}>
+        <Flex sx={{ alignItems: 'center', width: ['100%', '100%', '25%'] }}>
           <Text
             auxiliary
             my={2}
@@ -55,7 +60,7 @@ const ResearchListItem: React.FC<IProps> = ({ item }) => (
           sx={{
             alignItems: 'center',
             justifyContent: 'space-between',
-            width: [1, 1, 1 / 4],
+            width: ['100%', '100%', '25%'],
           }}
         >
           <Text color="black">{getUpdateText(item)}</Text>

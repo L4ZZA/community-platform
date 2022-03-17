@@ -33,6 +33,7 @@ const TextAreaStyled = styled.textarea`
 const BoxStyled = styled(Box)`
   position: relative;
   border-radius: 5px;
+  display: block;
 `
 
 const AvatarBoxStyled = styled(Box)`
@@ -42,6 +43,7 @@ const AvatarBoxStyled = styled(Box)`
 `
 
 const TextBoxStyled = styled(Box)`
+  display: block;
   &::before {
     content: '';
     position: absolute;
@@ -59,6 +61,7 @@ const TextStyled = styled(Text)`
 `
 
 const LoginTextStyled = styled(Text)`
+  display: block;
   padding: 1.5em 1em;
 `
 
@@ -67,7 +70,7 @@ export const CommentTextArea = ({ onChange, comment, loading }) => {
   const user = stores.userStore.activeUser
 
   return (
-    <BoxStyled bg="white">
+    <BoxStyled sx={{ background: 'white' }}>
       <AvatarBoxStyled>
         <Avatar profileType={user?.profileType} />
       </AvatarBoxStyled>

@@ -79,7 +79,10 @@ export default class HowtoDescription extends PureComponent<IProps> {
         <Flex
           px={4}
           py={4}
-          sx={{ flexDirection: 'column', width: [1, 1, 1 / 2] }}
+          sx={{
+            flexDirection: 'column',
+            width: ['100%', '100%', `${(1 / 2) * 100}%`],
+          }}
         >
           <Flex sx={{ justifyContent: 'space-between', flexWrap: 'wrap' }}>
             <Link to={'/how-to/'}>
@@ -179,15 +182,21 @@ export default class HowtoDescription extends PureComponent<IProps> {
 
           <Flex mt="4">
             <Flex mr="4" sx={{ flexDirection: iconFlexDirection }}>
-              <Image src={StepsIcon} height="1em" mr="2" mb="2" />
+              <Image src={StepsIcon} height="16" width="23" mr="2" mb="2" />
               {howto.steps.length} steps
             </Flex>
             <Flex mr="4" sx={{ flexDirection: iconFlexDirection }}>
-              <Image src={TimeNeeded} height="1em" mr="2" mb="2" />
+              <Image src={TimeNeeded} height="16" width="16" mr="2" mb="2" />
               {howto.time}
             </Flex>
             <Flex mr="4" sx={{ flexDirection: iconFlexDirection }}>
-              <Image src={DifficultyLevel} height="1em" mr="2" mb="2" />
+              <Image
+                src={DifficultyLevel}
+                height="15"
+                width="16"
+                mr="2"
+                mb="2"
+              />
               {howto.difficulty_level}
             </Flex>
           </Flex>
@@ -215,7 +224,7 @@ export default class HowtoDescription extends PureComponent<IProps> {
         </Flex>
         <Flex
           sx={{
-            width: [1, 1, 1 / 2],
+            width: ['100%', '100%', `${(1 / 2) * 100}%`],
             position: 'relative',
             justifyContent: 'end',
           }}

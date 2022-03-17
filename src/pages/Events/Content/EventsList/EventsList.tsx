@@ -56,10 +56,13 @@ export class EventsList extends React.Component<any> {
               sx={{
                 flexWrap: 'nowrap',
                 flexDirection: ['column-reverse', 'column-reverse', 'row'],
-                width: [1, 1, 0.5],
+                width: ['100%', '100%', '50%'],
               }}
             >
-              <Box sx={{ width: [1, 1, 0.5] }} mb={['10px', '10px', 0]}>
+              <Box
+                sx={{ width: ['100%', '100%', '50%'] }}
+                mb={['10px', '10px', 0]}
+              >
                 <TagsSelect
                   onChange={tags =>
                     this.props.eventStore.updateSelectedTags(tags)
@@ -78,7 +81,7 @@ export class EventsList extends React.Component<any> {
                 }}
               >
                 <Link
-                  sx={{width: '100%'}}
+                  sx={{ width: '100%' }}
                   to={this.props.userStore!.user ? '/events/create' : 'sign-up'}
                 >
                   <Button
@@ -115,12 +118,14 @@ export class EventsList extends React.Component<any> {
               </Flex>
               <MoreContainer m={'0 auto'} pt={60} pb={90}>
                 <Flex
-                  sx={{ alignItems: 'center', flexDirection: 'column' }}
+                  sx={{
+                    alignItems: 'center',
+                    flexDirection: 'column',
+                    textAlign: 'center',
+                  }}
                   mt={5}
                 >
-                  <Heading medium sx={{ textAlign: 'center' }}>
-                    Connect with a likeminded community.
-                  </Heading>
+                  <Heading medium>Connect with a likeminded community.</Heading>
                   <Heading medium>All around the planet.</Heading>
                   <Link
                     to={

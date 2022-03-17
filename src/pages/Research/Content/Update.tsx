@@ -70,13 +70,17 @@ const Update: React.FC<IProps> = ({
             <Flex
               sx={{ width: '100%', flexDirection: ['column', 'row', 'row'] }}
             >
-              <Heading sx={{ width: [1, 3 / 4, 3 / 4] }} medium mb={[2, 0, 0]}>
+              <Heading
+                sx={{ width: ['100%', '75%', '75%'] }}
+                medium
+                mb={[2, 0, 0]}
+              >
                 {update.title}
               </Heading>
               <Flex
                 sx={{
                   flexDirection: ['row', 'column', 'column'],
-                  width: [1, 1 / 4, 1 / 4],
+                  width: ['100%', '25%', '25%'],
                   justifyContent: 'space-between',
                 }}
               >
@@ -105,10 +109,7 @@ const Update: React.FC<IProps> = ({
                     mt={[0, 2, 2]}
                     to={'/research/' + slug + '/edit-update/' + update._id}
                   >
-                    <Button
-                      variant={'primary'}
-                      data-cy={'edit-update'}
-                    >
+                    <Button variant={'primary'} data-cy={'edit-update'}>
                       Edit
                     </Button>
                   </Link>

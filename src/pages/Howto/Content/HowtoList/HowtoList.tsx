@@ -123,7 +123,7 @@ export class HowtoList extends React.Component<any, IState> {
       <Box>
         <Flex py={26}>
           {referrerSource ? (
-            <Box sx={{ width: 1 }}>
+            <Box sx={{ width: '100%' }}>
               <Heading medium bold txtcenter mt={20}>
                 The page you were looking for was moved or doesn't exist.
               </Heading>
@@ -177,7 +177,7 @@ export class HowtoList extends React.Component<any, IState> {
           </Flex>
           <Flex sx={{ justifyContent: ['flex-end', 'flex-end', 'auto'] }}>
             <Link
-              sx={{width: '100%'}}
+              sx={{ width: '100%' }}
               to={this.props.userStore!.user ? '/how-to/create' : 'sign-up'}
               mb={[3, 3, 0]}
             >

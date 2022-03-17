@@ -90,7 +90,7 @@ class ResendSignUpMessagePage extends React.Component<IProps, IState> {
                   <Flex sx={{ flexDirection: 'column' }} mb={3}>
                     <Flex
                       mb={3}
-                      sx={{ flexDirection: 'column', width: [1, 1, 2 / 3] }}
+                      sx={{ flexDirection: 'column', width: ['100%', '100%', `${2 / 3 * 100}%`] }}
                     >
                       <Label htmlFor="email">Email</Label>
                       <Field

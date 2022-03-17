@@ -60,7 +60,10 @@ export default class Step extends PureComponent<IProps> {
             <Flex
               py={4}
               px={4}
-              sx={{ width: [1, 1, 4 / 9], flexDirection: 'column' }}
+              sx={{
+                width: ['100%', '100%', `${(1 / 2) * 100}%`],
+                flexDirection: 'column',
+              }}
             >
               <Heading medium mb={0}>
                 {/* HACK 2021-07-16 - new howtos auto capitalize title but not older */}
@@ -75,7 +78,7 @@ export default class Step extends PureComponent<IProps> {
                 </Text>
               </Box>
             </Flex>
-            <Box sx={{ width: [1, 1, 5 / 9] }}>
+            <Box sx={{ width: ['100%', '100%', `${(1 / 2) * 100}%`] }}>
               {step.videoUrl ? (
                 <ReactPlayer
                   width="auto"

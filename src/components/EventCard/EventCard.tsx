@@ -41,42 +41,28 @@ export const EventCard = (props: IProps) => (
       />
     )}
 
-    <Flex mb={[1, 1, 0]} sx={{ order: [1, 1, 1], flexWrap: 'wrap', flex: '1' }}>
-      <Flex
+    <Flex mb={[1, 1, 0]} sx={{ order: [1, 1, 1], flexWrap: 'wrap', flex: 1, flexDirection: 'column' }}>
+      <Text
+        bold
         sx={{
-          alignItems: ['center', 'center', 'center'],
-          width: ['auto', 'auto', 1],
-        }}
-        mr={[1, 1, 0]}
-      >
-        <Text
-          bold
-          sx={{
-            fontSize: [2, 2, 5],
-            width: ['auto', 'auto', 1],
-            textAlign: 'center',
-          }}
-        >
-          {getDay(new Date(props.event.date))}
-        </Text>
-      </Flex>
-      <Flex
-        sx={{
-          alignItems: ['center', 'center', 'center'],
-          width: ['auto', 'auto', 1],
+          display: 'block',
+          fontSize: [2, 2, 5],
+          textAlign: 'center',
+          flex: 2,
         }}
       >
-        <Text
-          bold
-          sx={{
-            width: ['auto', 'auto', 1],
-            fontSize: [2, 2, 5],
-            textAlign: 'center',
-          }}
-        >
-          {getMonth(new Date(props.event.date), 'short')}
-        </Text>
-      </Flex>
+        {getDay(new Date(props.event.date))}
+      </Text>
+      <Text
+        bold
+        sx={{
+          display: 'block',
+          fontSize: [2, 2, 5],
+          textAlign: 'center',
+        }}
+      >
+        {getMonth(new Date(props.event.date), 'short')}
+      </Text>
     </Flex>
     <Flex
       sx={{

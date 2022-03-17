@@ -1,8 +1,5 @@
 import { forwardRef } from 'react'
-import {
-  Text as ThemeUiText,
-  TextProps as ThemeUiTextProps,
-} from 'theme-ui'
+import { Text as ThemeUiText, TextProps as ThemeUiTextProps } from 'theme-ui'
 import theme from '../../themes/styled.theme'
 import styled from '@emotion/styled'
 
@@ -48,7 +45,7 @@ export const capitalize = props =>
     : null
 
 export const inline = (props: ITextProps) =>
-  props.inline ? { display: 'inline-block' } : null
+  props.inline ? { display: 'inline-block' } : { display: 'block' }
 
 export const txtcenter = (props: ITextProps) =>
   props.txtcenter ? { textAlign: 'center' } : null
@@ -120,6 +117,7 @@ export const cropBottomRight = (props: ITextProps) =>
 
 // any export to fix: https://github.com/microsoft/TypeScript/issues/37597
 export const BaseText = styled(ThemeUiText as any)`
+
   ${inline}
   ${uppercase as any}
   ${capitalize as any}
