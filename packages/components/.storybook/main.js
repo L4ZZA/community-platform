@@ -5,10 +5,13 @@ const paths = {
 
 module.exports = {
   stories: [
-    '../../../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
-    '../../components/src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    // '../../../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
+    // '../../components/src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
     '../src/**/*.stories.@(js|jsx|ts|tsx|mdx)',
   ],
+  features: {
+    emotionAlias: false,
+  },
   // https://github.com/storybookjs/presets/tree/master/packages/preset-create-react-app
   addons: [
     {

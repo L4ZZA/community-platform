@@ -1,6 +1,6 @@
-import { Component } from 'react';
+import { Component } from 'react'
 import { Label, HiddenInput } from '../elements'
-import { Image, Flex, Box } from 'rebass'
+import { Image, Flex, Box } from 'theme-ui'
 import Text from 'src/components/Text'
 import { HiddenInputField } from 'src/components/Form/Fields'
 
@@ -54,11 +54,10 @@ class CustomRadioField extends Component<IProps, IState> {
 
     return (
       <Label
-        alignItems={'center'}
+        sx={{ alignItems: 'center', width: '100%' }}
         htmlFor={value}
         className={classNames.join(' ')}
         data-cy={dataCy}
-        width={'100%'}
       >
         <HiddenInput
           id={value}
@@ -74,14 +73,20 @@ class CustomRadioField extends Component<IProps, IState> {
           }}
         />
         {imageSrc && (
-          <Image px={3} src={imageSrc} width={['100px', '100px', '100%']} />
+          <Image
+            px={3}
+            src={imageSrc}
+            sx={{ width: ['100px', '100px', '100%'] }}
+          />
         )}
         <Flex
-          alignItems="center"
-          flexWrap="nowrap"
-          flexDirection="column"
+          sx={{
+            alignItems: 'center',
+            flexWrap: 'nowrap',
+            flexDirection: 'column',
+            height: ['inherit', 'inherit', '100%'],
+          }}
           px={1}
-          height={['inherit', 'inherit', '100%']}
         >
           <Box mt="auto">
             {textLabel && (

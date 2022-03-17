@@ -1,4 +1,4 @@
-import { Link } from 'rebass'
+import { Link } from 'theme-ui'
 import ImageTargetBlank from 'src/assets/icons/link-target-blank.svg'
 import theme from 'src/themes/styled.theme'
 

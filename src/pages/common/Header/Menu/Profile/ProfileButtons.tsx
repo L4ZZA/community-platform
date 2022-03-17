@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import theme from 'src/themes/styled.theme'
 import styled from '@emotion/styled'
-import { Box } from 'rebass'
+import { Box } from 'theme-ui'
 import ProfileButtonItem from './ProfileButtonItem'
 
 interface IProps {
@@ -24,11 +24,11 @@ export class ProfileButtons extends Component<IProps> {
                 link={'/sign-in'}
                 text="Login"
                 variant="secondary"
-                style={{
+                sx={{
                   fontWeight: 'bold',
-                  marginRight: 2,
+                  marginRight: '100px',
                   display: 'inline-block',
-                  width: 100,
+                  width: '100%',
                   fontSize: theme.fontSizes[1],
                 }}
                 isMobile={true}
@@ -56,7 +56,6 @@ export class ProfileButtons extends Component<IProps> {
               variant="secondary"
               style={{
                 fontWeight: 'bold',
-                marginRight: theme.radii[2],
                 fontSize: theme.fontSizes[2],
               }}
             />

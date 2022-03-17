@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box, Text } from 'rebass'
+import { Box, Text } from 'theme-ui'
 import { Avatar } from '../Avatar'
 import { useCommonStores } from 'src/index'
 import { Link } from '../Links'
@@ -99,7 +99,9 @@ export const CommentTextArea = ({ onChange, comment, loading }) => {
           </LoginTextStyled>
         )}
       </TextBoxStyled>
-      {user && <TextStyled fontSize="2">{comment.length}/400</TextStyled>}
+      {user && (
+        <TextStyled sx={{ fontSize: 2 }}>{comment.length}/400</TextStyled>
+      )}
     </BoxStyled>
   )
 }

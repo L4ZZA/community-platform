@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'src/components/Links'
 import { Button } from 'oa-components'
@@ -18,7 +18,9 @@ interface IProps {
   isMobile?: boolean
 }
 
-interface IProps {}
+interface IProps {
+  sx?: any
+}
 
 interface IInjectedProps extends IProps {
   mobileMenuStore: MobileMenuStore
@@ -51,6 +53,7 @@ export class ProfileButtonItem extends React.Component<IProps> {
             {...(this.props.isMobile ? { large: true } : { medium: true })}
             data-cy={this.props.text.toLowerCase()}
             style={this.props.style}
+            sx={this.props.sx}
           >
             {this.props.text}
           </ButtonSign>
