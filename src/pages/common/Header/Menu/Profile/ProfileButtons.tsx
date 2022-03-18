@@ -1,7 +1,7 @@
-import { Component } from 'react';
+import { Component } from 'react'
 import theme from 'src/themes/styled.theme'
 import styled from '@emotion/styled'
-import { Box } from 'theme-ui'
+import { Box, Flex } from 'theme-ui'
 import ProfileButtonItem from './ProfileButtonItem'
 
 interface IProps {
@@ -18,7 +18,7 @@ export class ProfileButtons extends Component<IProps> {
     return (
       <>
         {this.props.isMobile ? (
-          <>
+          <Flex>
             <PanelButton>
               <ProfileButtonItem
                 link={'/sign-in'}
@@ -26,8 +26,8 @@ export class ProfileButtons extends Component<IProps> {
                 variant="secondary"
                 sx={{
                   fontWeight: 'bold',
-                  marginRight: '100px',
-                  display: 'inline-block',
+                  marginRight: '10px',
+                  display: 'block',
                   width: '100%',
                   fontSize: theme.fontSizes[1],
                 }}
@@ -40,22 +40,24 @@ export class ProfileButtons extends Component<IProps> {
                 text="Join"
                 variant="colorful"
                 isMobile={true}
-                style={{
+                sx={{
                   display: 'inline-block',
-                  width: 100,
+                  width: '100%',
+                  marginLeft: '100px',
                   fontSize: theme.fontSizes[1],
                 }}
               />
             </PanelButton>
-          </>
+          </Flex>
         ) : (
           <>
             <ProfileButtonItem
               link={'/sign-in'}
               text="Login"
               variant="secondary"
-              style={{
+              sx={{
                 fontWeight: 'bold',
+                marginRight: '10px',
                 fontSize: theme.fontSizes[2],
               }}
             />
@@ -63,7 +65,7 @@ export class ProfileButtons extends Component<IProps> {
               link={'/sign-up'}
               text="Join"
               variant="colorful"
-              style={{ fontSize: theme.fontSizes[2] }}
+              sx={{ fontSize: theme.fontSizes[2] }}
             />
           </>
         )}
