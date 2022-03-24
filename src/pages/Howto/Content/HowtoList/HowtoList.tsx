@@ -161,7 +161,11 @@ export class HowtoList extends React.Component<any, IState> {
               relevantTagsItems={filteredHowtos}
             />
           </Flex>
-          <Flex ml={[0, 0, '8px']} mb={['10px', '10px', 0]} width={[1, 1, 0.2]}>
+          <Flex
+            ml={[0, 0, '8px']}
+            mb={['10px', '10px', 0]}
+            sx={{ width: ['100%', '100%', '20%'] }}
+          >
             <SortSelect usefulCounts={users_votedUsefulHowtos} />
           </Flex>
           <Flex ml={[0, 0, '8px']} mr={[0, 0, 'auto']} mb={['10px', '10px', 0]}>

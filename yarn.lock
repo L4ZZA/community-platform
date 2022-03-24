@@ -22997,10 +22997,10 @@ fsevents@^1.2.7:
   resolution: "oa-components@workspace:packages/components"
   dependencies:
     "@babel/core": ^7.14.3
-    "@react-icons/all-files": ^4.1.0
     "@emotion/react": ^11.8.2
     "@emotion/styled": ^11.8.1
     "@mdx-js/react": ^2.0.0
+    "@react-icons/all-files": ^4.1.0
     "@react-theming/storybook-addon": ^1.1.5
     "@storybook/addon-actions": ^6.4.19
     "@storybook/addon-docs": ^6.4.19
@@ -26700,19 +26700,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-<<<<<<< HEAD
-=======
-"react-icons@npm:^3.2.2":
-  version: 3.11.0
-  resolution: "react-icons@npm:3.11.0"
-  dependencies:
-    camelcase: ^5.0.0
-  peerDependencies:
-    react: "*"
-  checksum: 2d45d47387aa85692ee431abe814c3984bc303b0ff25146de86a3cecf7f144c75bc9755df296c626bf133a05622b812fbf95d99776d9a92c7edd90fa7fbbead1
-  languageName: node
-  linkType: hard
-
 "react-icons@npm:^4.3.1":
   version: 4.3.1
   resolution: "react-icons@npm:4.3.1"
@@ -26722,7 +26709,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
->>>>>>> 3f21188f (feat: switch to theme-ui from rebass)
 "react-image-lightbox@npm:^5.1.0":
   version: 5.1.4
   resolution: "react-image-lightbox@npm:5.1.4"

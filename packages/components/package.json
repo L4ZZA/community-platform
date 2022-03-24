@@ -14,12 +14,9 @@
     "lint:code": "eslint . --ext .js,.jsx,.ts,.tsx src --color"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "@react-icons/all-files": "^4.1.0",
-=======
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
->>>>>>> 3f21188f (feat: switch to theme-ui from rebass)
+    "@react-icons/all-files": "^4.1.0",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-flag-icon-css": "^1.0.25",

@@ -1,5 +1,5 @@
 import React, { createRef, useEffect, useState } from 'react'
-import { Flex } from 'theme-ui'
+import { Flex, Box } from 'theme-ui'
 import { IComment } from 'src/models'
 import { CommentHeader } from './CommentHeader'
 import { Text } from 'src/components/Text'
@@ -48,20 +48,21 @@ export const Comment: React.FC<IProps> = ({
   }
 
   return (
-<<<<<<< HEAD
     <Box>
       <Flex
-        flexDirection="column"
         p="3"
         bg={'white'}
-        width="100%"
         mb={4}
-        style={{ borderRadius: '5px' }}
+        sx={{
+          width: '100%',
+          flexDirection: 'column',
+          borderRadius: '5px',
+        }}
       >
         <CommentHeader {...props} />
         <Text
           my={2}
-          style={{
+          sx={{
             whiteSpace: 'pre-wrap',
             wordBreak: 'break-word',
             overflow: 'hidden',
@@ -120,110 +121,5 @@ export const Comment: React.FC<IProps> = ({
         )}
       </Flex>
     </Box>
-=======
-    <Flex
-      sx={{ flexDirection: 'column', width: '100%' }}
-      p="3"
-      bg={'white'}
-      mb={4}
-      style={{ borderRadius: '5px' }}
-    >
-      <CommentHeader {...props} />
-      <Text
-        my={2}
-        style={{
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word',
-          overflow: 'hidden',
-          lineHeight: '1em',
-          maxHeight: isShowMore ? 'max-content' : '10em',
-        }}
-        ref={textRef}
-      >
-        {text}
-      </Text>
-      {textHeight > 160 && (
-        <a
-          onClick={showMore}
-          style={{
-            color: 'gray',
-            cursor: 'pointer',
-            fontSize: '14px',
-          }}
-        >
-          {isShowMore ? 'Show less' : 'Show more'}
-        </a>
-      )}
-      <Flex ml="auto">
-        <AuthWrapper roleRequired="admin" additionalAdmins={[_creatorId]}>
-          <Text
-            sx={{
-              cursor: 'pointer',
-              fontSize: '12px',
-            }}
-            mr={2}
-            onClick={onEditRequest}
-          >
-            edit <FaRegEdit />
-          </Text>
-          <Text
-            sx={{
-              cursor: 'pointer',
-              alignItems: 'center',
-              fontSize: '12px',
-            }}
-            onClick={onDelete}
-          >
-            delete <FaTrash color="red" />
-          </Text>
-        </AuthWrapper>
-      </Flex>
-
-      {showEditModal && (
-        <Modal width={600}>
-          <Form
-            onSubmit={values => {
-              logger.debug(values)
-            }}
-            initialValues={{
-              comment: text,
-            }}
-            render={({ handleSubmit, values }) => (
-              <Flex
-                as="form"
-                sx={{ flexDirection: 'column' }}
-                p={2}
-                onSubmit={handleSubmit}
-              >
-                <Text as="label" large style={{ marginBottom: '6px' }}>
-                  Edit comment
-                </Text>
-                <Field name="comment" id="comment" component={TextAreaField} />
-                <Flex mt={4} ml="auto">
-                  <Button
-                    small
-                    mr={4}
-                    variant="secondary"
-                    onClick={() => setShowEditModal(false)}
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    small
-                    onClick={() => {
-                      handleEdit(_id, values.comment)
-                      setShowEditModal(false)
-                    }}
-                  >
-                    Edit
-                  </Button>
-                </Flex>
-              </Flex>
-            )}
-          />
-        </Modal>
-      )}
-    </Flex>
->>>>>>> 3f21188f (feat: switch to theme-ui from rebass)
   )
 }
