@@ -6941,101 +6941,99 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@theme-ui/color-modes@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/color-modes@npm:0.13.1"
+"@theme-ui/color-modes@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/color-modes@npm:0.14.1"
   dependencies:
-    "@theme-ui/core": 0.13.1
-    "@theme-ui/css": 0.13.1
+    "@theme-ui/core": 0.14.1
+    "@theme-ui/css": 0.14.1
     deepmerge: ^4.2.2
   peerDependencies:
     "@emotion/react": ^11
     react: ^16 || ^17
-  checksum: b27f5ed99ee9b7cc19098591d1c2c7a869452c32f5f9708e208ee4c0bfe6b8c0523feafe951c561b228275eb462b05fde85843c616f42e0b6572288e4a1d7e11
+  checksum: b0885cef2d3978f444f55346117c3a11655aa855afa87b1b5e6d2db49b9f9a9999a6bd1d7a626b93020da3f3022d60a7eb8bde6ef6d2ea6dc95c39702022625a
   languageName: node
   linkType: hard
 
-"@theme-ui/components@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/components@npm:0.13.1"
+"@theme-ui/components@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/components@npm:0.14.1"
   dependencies:
     "@styled-system/color": ^5.1.2
     "@styled-system/should-forward-prop": ^5.1.2
     "@styled-system/space": ^5.1.2
-    "@theme-ui/css": 0.13.1
+    "@theme-ui/css": 0.14.1
     "@types/styled-system": ^5.1.13
   peerDependencies:
     "@emotion/react": ^11
-    "@emotion/styled": ^11
     react: ^16 || ^17
-  checksum: 4ce23616e330e3a907aa12ac6a23bd7118e69a10482b147073f0ddd2def481428a0934e290b83b3d68ac5e37702c9fa9b3ddc3b03801d453b8a5501bde84ea70
+  checksum: d7446c5b143b1b35357e09630e522a5b943f62ea1cd1fdee67f8e7383dc19244189f75f00e79c762bd7a74c82bf6ad70f693e9a3f0cf86677d92fd08063821f8
   languageName: node
   linkType: hard
 
-"@theme-ui/core@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/core@npm:0.13.1"
+"@theme-ui/core@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/core@npm:0.14.1"
   dependencies:
-    "@theme-ui/css": 0.13.1
-    "@theme-ui/parse-props": 0.13.1
+    "@theme-ui/css": 0.14.1
+    "@theme-ui/parse-props": 0.14.1
     deepmerge: ^4.2.2
   peerDependencies:
     "@emotion/react": ^11
     react: ^16 || ^17
-  checksum: db54ec74ba9bf19786eda5c6c0dc3f28352238a414752fa0d3b6f9e1038cb6b2790871c4c195945ec08553810d2b2e68414546b6db99172c8f8e1ad35849bd5a
+  checksum: 5cc52f19e0fdfe983a404b967878c204dc775345262b099c7809f763c5cf3d1242c540c3a022b6df0cc326ff0228af8cfecb4880998d1dc3be617789ef7fe503
   languageName: node
   linkType: hard
 
-"@theme-ui/css@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/css@npm:0.13.1"
+"@theme-ui/css@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/css@npm:0.14.1"
   dependencies:
     csstype: ^3.0.10
   peerDependencies:
     "@emotion/react": ^11
-  checksum: cc3d06db81da0f4b8bfe6c447a99facbade28392463204001cc6e294d3ab0e23b5c0c7b66e0846b07ab6ca6e159020f1b812a450a876ab882bfb6bb6ecf03283
+  checksum: edbc7af37cb430eab6d7c92aee7a02b6db97b2e35925a266ec2e95656324a8859435d846264adcc19295be296aeacc245d173f69243e731ba0d8e40a217ec73d
   languageName: node
   linkType: hard
 
-"@theme-ui/mdx@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/mdx@npm:0.13.1"
+"@theme-ui/mdx@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/mdx@npm:0.14.1"
   dependencies:
-    "@theme-ui/core": 0.13.1
-    "@theme-ui/css": 0.13.1
+    "@theme-ui/core": 0.14.1
+    "@theme-ui/css": 0.14.1
   peerDependencies:
     "@emotion/react": ^11
-    "@emotion/styled": ^11
     "@mdx-js/react": ^1 || ^2
     react: ^16 || ^17
-  checksum: 65c2c9ed382d199f8e1baea81a1a169dadc3e0ca3da8b735f729301531b770c5126d98c950dd38df357ced940d2254c7298dbd422b79e561c03f4b13864be489
+  checksum: f75105f644f6d7bd5a634ee852f2145d5f6d911d52e385bf00eccd41831608acd8a26082c5ead8904232568dd28454124d33411fde5ddee3cf5e7b132f6db599
   languageName: node
   linkType: hard
 
-"@theme-ui/parse-props@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/parse-props@npm:0.13.1"
+"@theme-ui/parse-props@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/parse-props@npm:0.14.1"
   dependencies:
-    "@theme-ui/css": 0.13.1
+    "@theme-ui/css": 0.14.1
   peerDependencies:
     "@emotion/react": ^11
     react: ^16 || ^17
-  checksum: d9dd74ef1202c37380ff8d550de2cb95935ff19b1159138397cfd06d37ebb7c6aee1d14200546933ae4240881aa39192c14852d871d2948ee17c95113bfc76bd
+  checksum: 211a3d85163ece1149fb916a6fb48881a535e6b38b45ebf06941400e29444b85df2ebb71b257469dd61f4c95706fb3b6dad97d75a1840e019c497407a0b9d7e5
   languageName: node
   linkType: hard
 
-"@theme-ui/theme-provider@npm:0.13.1":
-  version: 0.13.1
-  resolution: "@theme-ui/theme-provider@npm:0.13.1"
+"@theme-ui/theme-provider@npm:0.14.1":
+  version: 0.14.1
+  resolution: "@theme-ui/theme-provider@npm:0.14.1"
   dependencies:
-    "@theme-ui/color-modes": 0.13.1
-    "@theme-ui/core": 0.13.1
-    "@theme-ui/css": 0.13.1
-    "@theme-ui/mdx": 0.13.1
+    "@theme-ui/color-modes": 0.14.1
+    "@theme-ui/core": 0.14.1
+    "@theme-ui/css": 0.14.1
+    "@theme-ui/mdx": 0.14.1
   peerDependencies:
     "@emotion/react": ^11
     react: ^16 || ^17
-  checksum: d75f2a60bba8a6ec6b1f6013e502a733250cbecae0d328dab97fbbc0e83d1c4265671d6dd0c146d75e685903e7c16c7420541c3873347845c3447324c89aa7f5
+  checksum: d2b863e9dee98b0e1336e475a4a4faad862a25f84fe005297fff653b9b583ce12a84753914817986784daf1d287f48ed54306ee0bc926f6dbc1630bd95bca201
   languageName: node
   linkType: hard
 
@@ -23019,7 +23017,7 @@ fsevents@^1.2.7:
     react-icons: ^4.3.1
     react-router: ^6.2.2
     storybook: ^6.4.19
-    theme-ui: ^0.13.1
+    theme-ui: ^0.14.1
     typescript: ^4.5.5
   languageName: unknown
   linkType: soft
@@ -23384,7 +23382,7 @@ fsevents@^1.2.7:
     start-server-and-test: ^1.11.0
     styled-system: ^5.1.5
     terser: 3.14.1
-    theme-ui: ^0.13.1
+    theme-ui: ^0.14.1
     ts-loader: ^7.0.5
     ts-node: ^10.4.0
     typescript: 4.5.5
@@ -30408,20 +30406,20 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"theme-ui@npm:^0.13.1":
-  version: 0.13.1
-  resolution: "theme-ui@npm:0.13.1"
+"theme-ui@npm:^0.14.1":
+  version: 0.14.1
+  resolution: "theme-ui@npm:0.14.1"
   dependencies:
-    "@theme-ui/color-modes": 0.13.1
-    "@theme-ui/components": 0.13.1
-    "@theme-ui/core": 0.13.1
-    "@theme-ui/css": 0.13.1
-    "@theme-ui/mdx": 0.13.1
-    "@theme-ui/theme-provider": 0.13.1
+    "@theme-ui/color-modes": 0.14.1
+    "@theme-ui/components": 0.14.1
+    "@theme-ui/core": 0.14.1
+    "@theme-ui/css": 0.14.1
+    "@theme-ui/mdx": 0.14.1
+    "@theme-ui/theme-provider": 0.14.1
   peerDependencies:
     react: ^16 || ^17
     react-dom: ^16 || ^17
-  checksum: 5d1228be61e739ecd9a5247d6e0e738558d4c12c88b0196d78262a74a030a55054429605f1d095a9736d496fd2b94fe6ada700b67b63ceb3221658396d5e9a18
+  checksum: 4c555de02ea17e0b25a1484bb68aba1a0173ac9f7d8b044adc45d224076c2484f77011ade0bf4ee57679277e091abeec4d5a23f7d16c30ab5f465fe071512dab
   languageName: node
   linkType: hard
 
