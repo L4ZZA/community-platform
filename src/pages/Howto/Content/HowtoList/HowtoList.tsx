@@ -144,7 +144,10 @@ export class HowtoList extends React.Component<any, IState> {
             flexDirection: ['column', 'column', 'row'],
           }}
         >
-          <Flex sx={{ flex: [1, 1, 0.2] }} mb={['10px', '10px', 0]}>
+          <Flex
+            sx={{ width: ['100%', '100%', '20%'] }}
+            mb={['10px', '10px', 0]}
+          >
             <TagsSelect
               value={selectedTags}
               onChange={tags => {
