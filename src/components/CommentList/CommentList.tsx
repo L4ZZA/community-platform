@@ -43,7 +43,7 @@ export const CommentList: React.FC<{
           ))}
       {comments && comments.length > shownComments && (
         <Button
-          sx={{ width: 'max-content' }}
+          sx={{ width: 'max-content', margin: '0 auto' }}
           variant="outline"
           onClick={() => {
             ReactGA.event({
